@@ -1,3 +1,13 @@
+# ###################################
+# Group ID : <420>
+# Members : <Niclas Alexander Pedersen, Snorre Johnsen, Mathias Majland Jørgensen, Johan Boelsbjerg Askjær, Rasmus Mellergaard Christensen, Markus Heinrich Toribio>
+# Date : <05/09/2025>
+# Lecture: <Lecture 1> <Introduction to Machine Learning> (see moodle)
+# Dependencies: os, numpy, matplotlib, scikit learn.
+# Python version: 3.11.5
+# Functionality: This script applies ridge regression to some dataset.
+# ###################################
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -113,7 +123,7 @@ x1_sub_100 = np.take(x1, sample_idx) # TODO
 x2_sub_100 = np.take(x2, sample_idx) # TODO
 
 
-deg = 10
+deg = 5
 reg = 1e-2
 coefs, mse = polyfit(x1_sub_100, x2_sub_100, deg=deg, regularization=reg, y=y)
 print('MSE = ', round(mse,3))
