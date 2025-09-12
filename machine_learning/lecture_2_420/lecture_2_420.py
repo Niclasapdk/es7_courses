@@ -1,3 +1,13 @@
+# ###################################
+# Group ID : <420>
+# Members : <Niclas Alexander Pedersen, Snorre Johnsen, Mathias Majland Jørgensen, Johan Boelsbjerg Askjær, Rasmus Mellergaard Christensen, Markus Heinrich Toribio>
+# Date : <12/09/2025>
+# Lecture: <Lecture 2> <Bayesian Decision Theory, Parametric and Nonparametric Methods> (see moodle)
+# Dependencies: numpy, scipy.stats.
+# Python version: 3.11.5
+# Functionality: This script is used to classify test data.
+# ###################################
+
 #!/usr/bin/env python
 # coding: utf-8
 
