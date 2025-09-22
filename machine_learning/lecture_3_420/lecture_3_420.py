@@ -1,4 +1,13 @@
-# %%
+# ###################################
+# Group ID : <420>
+# Members : <Niclas Alexander Pedersen, Snorre Johnsen, Mathias Majland Jørgensen, Johan Boelsbjerg Askjær, Rasmus Mellergaard Christensen, Markus Heinrich Toribio>
+# Date : <19/09/2025>
+# Lecture: <Lecture 3> <Dimensionality Reduction> (see moodle)
+# Dependencies: numpy, scipy, matplotlib, sklearn.
+# Python version: 3.11.5
+# Functionality: This script is used to reduce dimensionality using LDA and perform classification on the reduced 2-dimensional data.
+# ###################################
+
 import numpy as np
 from scipy.stats import multivariate_normal as mvn  # Gaussian log-likelihoods
 import matplotlib.pyplot as plt
