@@ -37,9 +37,9 @@ for n in range(0, N):
 
 # y2 = [zeros(sampleDelay,1) ; y] ;
 filtered_signal_LMS = u - y
-write("filtered_signal_LMS.wav", Fs, filtered_signal_LMS)
+#write("filtered_signal_LMS.wav", Fs, filtered_signal_LMS)
 # Below is 16 bit version
-# write(f"filtered_signal_LMS_16b.wav", Fs, (filtered_signal_LMS*u_max).astype(np.int16))
+write(f"filtered_signal_LMS_16b.wav", Fs, (filtered_signal_LMS*u_max).astype(np.int16))
 t1 = time.time()
 
 
@@ -60,9 +60,9 @@ for n in range(0, N):
     y[n] = np.matmul(w, u_vect)
 
 filtered_signal_NLMS = u - y
-write("filtered_signal_NLMS.wav", Fs, filtered_signal_NLMS)
+# write("filtered_signal_NLMS.wav", Fs, filtered_signal_NLMS)
 # Below is 16 bit version
-# write(f"filtered_signal_NLMS_16b.wav", Fs, (filtered_signal_NLMS*u_max).astype(np.int16))
+write(f"filtered_signal_NLMS_16b.wav", Fs, (filtered_signal_NLMS*u_max).astype(np.int16))
 t3 = time.time()
 
 
@@ -86,9 +86,9 @@ for n in range(0, N):
     y[n] = np.matmul(w, u_vect)
 
 filtered_signal_RLS = u - y
-write("filtered_signal_RLS.wav", Fs, filtered_signal_RLS)
+# write("filtered_signal_RLS.wav", Fs, filtered_signal_RLS)
 # Below is 16 bit version
-# write(f"filtered_signal_RLS_16b.wav", Fs, (filtered_signal_RLS*u_max).astype(np.int16))
+write(f"filtered_signal_RLS_16b.wav", Fs, (filtered_signal_RLS*u_max).astype(np.int16))
 t5 = time.time()
 
 print(f"LMS took  {t1-t0:>.3f}")
